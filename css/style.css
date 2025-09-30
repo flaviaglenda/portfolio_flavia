@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 40px;
+  box-shadow: 0 2px 15px rgba(155, 87, 131, 0.525);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nome {
+  color: rgb(107, 17, 76);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.projetos {
+  background-color: rgb(107, 17, 76);
+  color: white;
+  border-radius: 25px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.projetos:hover {
+  background-color: white;
+  color: rgb(107, 17, 76);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgb(107, 17, 76);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section_inicio {
+  background-color: rgb(251, 217, 239);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.conteudo_texto {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+  margin-left: 90px;
+}
+
+.nome_perfil {
+  font-size: 4.5rem;
+  color: rgb(107, 17, 76);
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: rgb(98, 0, 69);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.botao_trabalhar {
+  background-color: rgba(188, 114, 158, 0.8);
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 20px rgba(188, 114, 158, 0.3);
+}
+
+.botao_trabalhar:hover {
+  background-color: rgb(107, 17, 76);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(107, 17, 76, 0.4);
+}
+
+.container_foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.foto_perfil {
+  width: 380px;
+  height: 390px;
+  border-radius: 90px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(107, 17, 76, 0.333);
+  margin-left: 300px;
+  transition: transform 0.3s ease;
+}
+
+.foto_perfil:hover {
+  transform: scale(1.02);
+}
+
+#section_projetos {
+  background-color: rgb(255, 255, 255);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#section_projetos h2 {
+  font-size: 2.8rem;
+  color: rgb(107, 17, 76);
+  margin-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.projeto-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(107, 17, 76, 0.262);
+  padding: 25px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  transition: none;
+    text-align: left;
+}
+
+.projeto-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.026);
+}
+
+.projeto-card h3 {
+  font-size: 1.8rem;
+  color: rgb(107, 17, 76);
+  margin-bottom: 10px;
+}
+
+.projeto-card p {
+  font-size: 1.1rem;
+  color: rgb(80, 15, 60);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.projeto-card a {
+  display: inline-block;
+  background: rgb(107, 17, 76);
+  color: #fff;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.projeto-card a:hover {
+  background: rgb(150, 30, 100);
+}
+
+.titulo_projeto {
+  margin-right: 900px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 32px;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons .linkedin {
+  color: rgb(107, 17, 76);
+}
+
+.social-icons .github {
+  color: rgb(107, 17, 76);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+#section_repositorios {
+  background-color: rgb(107, 17, 76);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#section_repositorios h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.repositorios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.repositorio-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: rgb(107, 17, 76);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.repositorio-link i {
+  font-size: 1.4rem;
+}
+
+.repositorio-link:hover {
+  background: rgb(152, 73, 125);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(107, 17, 76, 0.3);
+}
+
+
+@media (max-width: 1024px) {
+  .section_inicio {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 40px 60px;
+  }
+
+  .conteudo_texto {
+    margin-bottom: 50px;
+  }
+
+  .foto_perfil {
+    width: 320px;
+    height: 340px;
+  }
+
+  .nome_perfil {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section_inicio {
+    padding: 100px 20px 40px;
+  }
+
+  .nome_perfil {
+    font-size: 2.8rem;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .foto_perfil {
+    width: 280px;
+    height: 300px;
+  }
+
+  #secaoProjetos {
+    padding: 60px 20px;
+  }
+
+  #secaoProjetos h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nome_perfil {
+    font-size: 2.2rem;
+  }
+
+  .foto_perfil {
+    width: 240px;
+    height: 260px;
+  }
+
+  .botao_trabalhar {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
