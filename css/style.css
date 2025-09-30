@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 .section_inicio {
-  background-color: rgb(251, 217, 239);
+  background-color: rgb(236, 209, 229);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -150,6 +150,19 @@ nav ul li a {
   text-align: center;
 }
 
+#section_sobre {
+  background-color: rgb(255, 255, 255);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.titulo_sobre {
+  font-size: 2.8rem;
+  color: rgb(107, 17, 76);
+  margin-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
 #section_projetos h2 {
   font-size: 2.8rem;
   color: rgb(107, 17, 76);
@@ -175,7 +188,7 @@ nav ul li a {
   height: 500px;
   text-align: center;
   transition: none;
-    text-align: left;
+  text-align: left;
 }
 
 .projeto-img {
@@ -252,6 +265,7 @@ nav ul li a {
 
 #section_repositorios h2 {
   font-size: 2.5rem;
+  margin-top: -20px;
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
   font-weight: bold;
@@ -290,7 +304,6 @@ nav ul li a {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(107, 17, 76, 0.3);
 }
-
 
 @media (max-width: 1024px) {
   .section_inicio {
